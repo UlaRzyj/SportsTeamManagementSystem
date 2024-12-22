@@ -57,7 +57,12 @@ public class Team
     {
         if(this.Role == "menedżer")
         {
-            
+            Console.WriteLine("Podaj imie zawodnika, któremu chcesz zmienić wynik: ");
+            string name = Console.ReadLine();
+            var player = Players.FirstOrDefault(x => x.Name == name);
+            Console.WriteLine("Podaj nowy wynik zawodnika: ");
+            int score = int.Parse(Console.ReadLine());
+            player.Score = score;
         }
         else
         {
