@@ -8,7 +8,7 @@ public class Player
     
     public Player(string name, string position, int score)
     {
-        Name = Name;
+        Name = name;
         Position = position;
         Score = score;
         
